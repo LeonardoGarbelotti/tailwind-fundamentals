@@ -4,6 +4,7 @@ import * as Input from '@/app/components/form/input'
 import { Select } from '@/app/components/form/select'
 import { SelectItem } from '@/app/components/form/select/select-item'
 import { Textarea } from '@/app/components/form/textarea'
+import { Button } from '../button'
 
 export function MyDetails() {
   return (
@@ -16,19 +17,15 @@ export function MyDetails() {
           </span>
         </div>
         <div className="flex items-center gap-2 ">
-          <button
+          <Button
             type="button"
-            className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
+            variant='outline'
           >
             Cancel
-          </button>
-          <button
-            type="submit"
-            form="settings"
-            className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-          >
+          </Button>
+          <Button type="submit" form="settings">
             Save
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -134,39 +131,39 @@ export function MyDetails() {
               </Select>
 
               <div className="flex items-center gap-1">
-                <button
+                <Button
                   type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
+                  variant='ghost'
                 >
                   <Bold className="h-4 w-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button
+                </Button>
+                <Button
                   type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
+                  variant='ghost'
                 >
                   <Italic className="h-4 w-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button
+                </Button>
+                <Button
                   type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
+                  variant='ghost'
                 >
                   <Link className="h-4 w-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button
+                </Button>
+                <Button
                   type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
+                  variant='ghost'
                 >
                   <List className="h-4 w-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button
+                </Button>
+                <Button
                   type="button"
-                  className="rounded-md p-2 hover:bg-zinc-50"
+                  variant='ghost'
                 >
                   <ListOrdered
                     className="h-4 w-4 text-zinc-500"
                     strokeWidth={3}
                   />
-                </button>
+                </Button>
               </div>
             </div>
 
